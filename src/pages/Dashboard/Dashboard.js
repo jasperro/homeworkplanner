@@ -7,4 +7,7 @@ export default styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-`
+  grid-gap: 2rem;
+  padding: 4rem 2rem;
+  flex-grow: 1;
+`;

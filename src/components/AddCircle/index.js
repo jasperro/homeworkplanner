@@ -5,7 +5,7 @@ import Line from './Line';
 
 export default ({ radius }) => (
     <Wrapper radius={radius}>
-      <Line width="50%" height="3px" />
-      <Line width="3px" height="50%" />
+      <Line width="30%" height="2px" />
+      <Line width="2px" height="30%" />
     </Wrapper>
 );

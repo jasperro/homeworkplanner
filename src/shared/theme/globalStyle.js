@@ -9,7 +9,7 @@ export default createGlobalStyle`
   
   html {
     font-size: 62.5%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
   
     box-sizing: border-box;
   }

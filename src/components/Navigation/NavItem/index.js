@@ -10,6 +10,10 @@ const ListItem = styled.li`
   display: flex;
   justify-content: center;
   cursor: pointer;
+
+  & .MuiSvgIcon-root {
+    font-size: 24px;
+  }
 `;
 
 const NavItem = ({ to, children }) => (

@@ -15,11 +15,12 @@ const opacityAnimation = props => keyframes`
 const StyledCheckBox = styled.div`
   width: 2rem;
   height: 2rem;
-  border: 2px solid ${props => props.theme.textColor};
+  border: 2px solid ${props => props.theme.darkAccent};
   cursor: pointer;
   transition: all .2s;
   margin-right: 1.5rem;
   position: relative;
+  border-radius: 2px;
 `;
 
 const Check = styled(Checkmark)`
@@ -28,7 +29,7 @@ const Check = styled(Checkmark)`
   height: 100%;
   fill: white;
   animation: ${props => opacityAnimation(props)} .2s ease-out forwards;
-  background-color: ${props => props.theme.textColor};
+  background-color: ${props => props.theme.darkAccent};
   display: ${props => props.checked ? 'block' : 'none'};
 `;
 

@@ -7,5 +7,5 @@ export default styled.div`
   align-items: center;
 
   background-color: #fff;
-  padding: 2rem;
+  justify-content: space-between;
 `;

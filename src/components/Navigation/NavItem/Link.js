@@ -10,12 +10,16 @@ export default styled(NavLink)`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 4px;
+  outline: none;
   
-  :hover {
+  :hover, :focus {
     color: ${props => props.theme.mainColor};
   };
-  
+
   &.active {
-    color: ${props => props.theme.mainColor}
+    color: ${props => props.theme.mainColor};
+    background-color: #E1F7FA;
   }
 `;

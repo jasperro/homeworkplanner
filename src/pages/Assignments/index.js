@@ -64,26 +64,28 @@ class Assignments extends Component {
           <Filterer />
         </Header>
         <AssignmentsContainer>
-          <Input
-            placeholder="Quick Entry..."
-            onChange={(event) => this.setState({ quickEntryValue: event.target.value })}
-            onKeyDown={(event) => event.keyCode === 13 ? this.addAssignmentHandler(event.target.value) : null}
-            value={this.state.quickEntryValue}
-            margin={2}
-          />
-          <CardWrapper padding={3}>
-            {assignments ? assignments.map((assignment, index) => (
-              <AssignmentCard
-                key={index}
-                id={index}
-                checkbox
-                title={assignment.title}
-                description={assignment.descr.length < 50 ? assignment.descr : `${assignment.descr.slice(0, 50)}...`}
-                onClick={this.clickAssignmentHandler}
-              />
-            )) : null}
-          </CardWrapper>
-          <AssignmentInfo id={this.state.selectedAssignment} change={this.changeAssignmentHandler}/>
+          <AssignmentsContainer left>
+            <Input
+              placeholder="Quick Entry..."
+              onChange={(event) => this.setState({ quickEntryValue: event.target.value })}
+              onKeyDown={(event) => event.keyCode === 13 ? this.addAssignmentHandler(event.target.value) : null}
+              value={this.state.quickEntryValue}
+              margin={2}
+            />
+            <CardWrapper padding={3}>
+              {assignments ? assignments.map((assignment, index) => (
+                <AssignmentCard
+                  key={index}
+                  id={index}
+                  checkbox
+                  title={assignment.title}
+                  description={assignment.descr.length < 50 ? assignment.descr : `${assignment.descr.slice(0, 50)}...`}
+                  onClick={this.clickAssignmentHandler}
+                />
+              )) : null}
+            </CardWrapper>
+          </AssignmentsContainer>
+          <AssignmentInfo id={this.state.selectedAssignment} change={this.changeAssignmentHandler} />
         </AssignmentsContainer>
         <AddCircle radius={6} />
       </AssignmentsWrapper>

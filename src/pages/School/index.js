@@ -4,7 +4,8 @@ class School extends Component {
   render() {
     return (
         <div>
-          Bonjour
+          <h2>This is your school data.</h2>
+          <h3>See your grades, assignments and homework in one glance</h3>
         </div>
     )
   }

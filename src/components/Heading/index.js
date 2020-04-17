@@ -9,10 +9,11 @@ const weights = {
 const headingStyles = props => `
   font-family: ${props.theme.headerFont};
   color: ${props.theme.textColor};
+  font-weight: normal;
 `;
 
 export const large = styled.h1`
-  font-size: 5rem;
+  font-size: 9rem;
   ${headingStyles}
 
   ${props => props.weight && css`
@@ -21,7 +22,7 @@ export const large = styled.h1`
 `;
 
 export const medium = styled.h2`
-  font-size: 3rem;
+  font-size: 4rem;
   ${headingStyles}
   
   ${props => props.weight && css`
@@ -30,7 +31,7 @@ export const medium = styled.h2`
 `;
 
 export const small = styled.h3`
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   ${headingStyles}
   
   ${props => props.weight && css`
